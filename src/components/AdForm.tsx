@@ -12,7 +12,10 @@ export default function AdForm() {
         <KakaoIcon />
         <p>플러스 친구를 추가하고 AN 출시 소식을 받아보세요</p>
       </div>
-      <p className="mt-3">사전 예약 신청을 받아 3개월 무료 이용권을 드려요</p>
+      <p className="mt-3">
+        사전 예약 신청을 받아{" "}
+        <span className="text-blue-900">3개월 무료 이용권</span>을 드려요
+      </p>
       <button
         className="bg-gradient-to-tr from-amber-200 via-emerald-400 to-blue-400 px-5 py-2 text-3xl rounded-xl mt-16 text-black outline-none hover:from-amber-300 hover:via-emerald-500 hover:to-blue-500"
         onClick={handleClick}
