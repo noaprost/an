@@ -14,7 +14,7 @@ export default function ImageInfo2() {
           대박
         </p>
       </div>
-      <p className="text-4xl">해당 스타일로 편집된 영상</p>
+      <p className="text-4xl">해당 영상 스타일로 편집된 영상</p>
     </section>
   );
 }

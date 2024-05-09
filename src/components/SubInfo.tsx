@@ -8,11 +8,11 @@ export default function SubInfo() {
       <div className="flex justify-between px-44 items-center">
         <div className="flex flex-col gap-2">
           <p className="text-4xl">
-            <span className="text-blue-500">AN</span>은 학습한 AI 모델을
+            <span className="text-blue-500">AN</span>은 학습된 AI 모델을
             이용하여
           </p>
           <p className="text-4xl">기존 편집 스타일을 유지하면서</p>
-          <p className="text-4xl">풀영상을 원하는 유형에 맞게 편집하세요</p>
+          <p className="text-4xl">풀영상을 원하는 유형에 맞게 편집해드려요</p>
         </div>
         <Image
           src={User2}
