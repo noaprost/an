@@ -14,13 +14,13 @@ export default function LastInfo() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY >= 2500) {
+    if (window.scrollY >= 2580) {
       setScroll(true);
     } else {
       setScroll(false);
     }
 
-    if (window.scrollY >= 2600) {
+    if (window.scrollY >= 2680) {
       setScroll2(true);
     } else {
       setScroll2(false);
