@@ -16,7 +16,7 @@ export default function ImageInfo1() {
         <PlusIcon />
         <div className="flex flex-col items-center gap-3">
           <p>풀영상을 업로드 하면</p>
-          <div className="w-72 h-48  rounded-xl flex justify-center items-center bg-blue-100">
+          <div className="w-72 h-48  rounded-xl flex justify-center items-center bg-blue-200">
             <PlusCircleIcon />
           </div>
           <p className="text-white">o</p>
