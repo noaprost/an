@@ -3,7 +3,7 @@ import SurpriseImage from "../../public/images/surprise.jpg";
 
 export default function ImageInfo2() {
   return (
-    <section className="mt-96 flex flex-col items-center gap-10">
+    <section className="flex flex-col items-center gap-10 py-40">
       <div className="">
         <Image
           src={SurpriseImage}

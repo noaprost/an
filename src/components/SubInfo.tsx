@@ -4,7 +4,7 @@ import User2 from "../../public/images/user2.png";
 
 export default function SubInfo() {
   return (
-    <section className="mt-96 flex flex-col gap-20 px-8">
+    <section className="mt-48 flex flex-col gap-20 px-8">
       <div className="flex justify-between px-44 items-center">
         <div className="flex flex-col gap-2">
           <p className="text-4xl">
@@ -17,7 +17,7 @@ export default function SubInfo() {
         <Image
           src={User2}
           alt="pro user"
-          className="object-cover rounded-full w-56 h-56"
+          className="object-cover rounded-full w-56 h-56 shadow-xl"
         />
       </div>
 
