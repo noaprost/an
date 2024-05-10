@@ -39,7 +39,7 @@ const config: Config = {
       animation: {
         "fade-in-up": "fade-in-up 1s ease-in",
         wiggle: "wiggle 0.5s ease-in-out infinite",
-        "fade-in": "fade-in 1s ease-in",
+        "fade-in": "fade-in 0.5s ease-in",
       },
     },
   },

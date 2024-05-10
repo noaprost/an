@@ -16,7 +16,7 @@ export default function SubInfo() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= 100) {
       setScroll(true);
     } else {
       setScroll(false);
