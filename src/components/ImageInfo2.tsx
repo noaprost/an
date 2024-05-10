@@ -4,8 +4,8 @@ import PlayIcon from "./ui/PlayIcon";
 
 export default function ImageInfo2() {
   return (
-    <section className="flex flex-col items-center gap-5 py-40">
-      <div className="">
+    <section className="flex flex-col items-center gap-5 pb-40 bg-blue-50">
+      <div>
         <Image
           src={SurpriseImage}
           alt="surprise face"

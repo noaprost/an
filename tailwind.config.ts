@@ -8,10 +8,38 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fade-in": {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        wiggle: {
+          "0%, 100%": {
+            transform: "rotate(-2deg)",
+          },
+          "50%": {
+            transform: "rotate(2deg)",
+          },
+        },
+      },
+      animation: {
+        "fade-in-up": "fade-in-up 1s ease-in",
+        wiggle: "wiggle 0.5s ease-in-out infinite",
+        "fade-in": "fade-in 1s ease-in",
       },
     },
   },

@@ -1,11 +1,39 @@
+"use client";
 import Image from "next/image";
 import User1 from "../../public/images/user1.png";
 import User2 from "../../public/images/user2.png";
+import { useEffect, useState } from "react";
 
 export default function SubInfo() {
+  const [scroll, setScroll] = useState(false);
+  const [scroll2, setScroll2] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 250) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+    if (window.scrollY >= 500) {
+      setScroll2(true);
+    } else {
+      setScroll2(false);
+    }
+  };
   return (
     <section className="mt-48 flex flex-col gap-20 px-8">
-      <div className="flex justify-between px-44 items-center">
+      <div
+        className={`flex justify-between px-44 items-center ${
+          scroll && "animate-fade-in-up"
+        }`}
+      >
         <div className="flex flex-col gap-2">
           <p className="text-4xl">
             <span className="text-blue-500">AN</span>은 학습된 AI 모델을
@@ -21,7 +49,11 @@ export default function SubInfo() {
         />
       </div>
 
-      <div className="flex justify-between px-44 items-center">
+      <div
+        className={`flex justify-between px-44 items-center ${
+          scroll2 && "animate-fade-in-up"
+        }`}
+      >
         <Image
           src={User1}
           alt="pro user"

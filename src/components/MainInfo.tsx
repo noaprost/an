@@ -5,10 +5,10 @@ import YoutubeIcon from "@/components/ui/YoutubeIcon";
 export default function MainInfo() {
   return (
     <section className="flex flex-col items-center gap-20 py-40 bg-blue-50">
-      <p className="font-bold text-7xl">
+      <p className="font-bold text-7xl animate-fade-in">
         AI 영상 편집 서비스 <span className="text-blue-600">AN</span>
       </p>
-      <div className="text-5xl">
+      <div className="text-5xl animate-fade-in">
         <div className="flex gap-20 ml-10 mb-4">
           <YoutubeIcon />
           <TicTokImage />
