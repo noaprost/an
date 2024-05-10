@@ -1,6 +1,6 @@
 export default function LastInfo() {
   return (
-    <section className="mt-48 text-5xl flex flex-col items-center py-72 bg-blue-50">
+    <section className="text-5xl flex flex-col items-center py-72 bg-blue-50">
       <div>
         <p>이처럼 단 두 단계의 과정으로</p>
         <p className="mt-3 text-blue-500">누구나 쉽고, 빠르게</p>
