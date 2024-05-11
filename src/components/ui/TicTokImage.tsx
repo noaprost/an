@@ -6,9 +6,9 @@ export default function TicTokImage() {
     <Image
       src={TicTok}
       alt="Tictok"
-      width={35}
-      height={35}
-      className="lg:ml-2 lg:scale-100 md:scale-80 scale-75"
+      width={28}
+      height={28}
+      className="lg:ml-2"
     />
   );
 }
