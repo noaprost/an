@@ -15,7 +15,7 @@ export default function ImageInfo2() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY >= 295) {
+    if (window.scrollY >= 260) {
       setScroll(true);
     } else {
       setScroll(false);
