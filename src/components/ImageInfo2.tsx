@@ -1,11 +1,32 @@
+"use client";
 import Image from "next/image";
 import SurpriseImage from "../../public/images/surprise.jpg";
 import PlayIcon from "./ui/PlayIcon";
+import { useEffect, useState } from "react";
 
 export default function ImageInfo2() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 260) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
   return (
-    <section className="flex flex-col items-center lg:gap-5 md:gap-3 gap-1 lg:pb-40 md:pb-40 pb-52 bg-blue-50">
-      <div>
+    <section
+      className={`flex flex-col items-center lg:gap-5 md:gap-3 gap-1 lg:pb-40 md:pb-40 pb-52 bg-blue-50`}
+    >
+      <div className={`${scroll && "animate-fade-in-up"}`}>
         <Image
           src={SurpriseImage}
           alt="surprise face"
