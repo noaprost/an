@@ -15,7 +15,7 @@ export default function ImageInfo2() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY >= 260) {
+    if (window.scrollY >= 295) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -37,7 +37,11 @@ export default function ImageInfo2() {
         </p>
         <PlayIcon />
       </div>
-      <p className="lg:text-4xl md:text-2xl text-xl">
+      <p
+        className={`lg:text-4xl md:text-2xl text-xl ${
+          scroll && "animate-fade-in-up"
+        }`}
+      >
         해당 영상 스타일로 편집된 영상
       </p>
     </section>
