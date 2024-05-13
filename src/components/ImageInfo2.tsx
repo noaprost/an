@@ -15,7 +15,7 @@ export default function ImageInfo2() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY >= 260) {
+    if (window.scrollY >= 250) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -23,10 +23,12 @@ export default function ImageInfo2() {
   };
 
   return (
-    <section
-      className={`flex flex-col items-center lg:gap-5 md:gap-3 gap-1 lg:pb-40 md:pb-40 pb-52 bg-blue-50`}
+    <div
+      className={`flex flex-col items-center lg:gap-5 md:gap-3 gap-1 lg:pb-40 md:pb-40 pb-52 bg-blue-50 ${
+        scroll && "animate-fade-in"
+      }`}
     >
-      <div className={`${scroll && "animate-fade-in-up"}`}>
+      <div>
         <Image
           src={SurpriseImage}
           alt="surprise face"
@@ -37,13 +39,9 @@ export default function ImageInfo2() {
         </p>
         <PlayIcon />
       </div>
-      <p
-        className={`lg:text-4xl md:text-2xl text-xl ${
-          scroll && "animate-fade-in-up"
-        }`}
-      >
+      <p className="lg:text-4xl md:text-2xl text-xl">
         해당 영상 스타일로 편집된 영상
       </p>
-    </section>
+    </div>
   );
 }
