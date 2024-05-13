@@ -7,10 +7,10 @@ export default function ImageInfo1() {
     <section className="mt-48 flex flex-col items-center gap-20 lg:py-40 md:py-40 py-60 bg-blue-50">
       <div className="flex justify-center items-center lg:gap-20 md:gap-10 gap-3">
         <div className="flex flex-col items-center gap-3">
-          <p className="lg:text-3xl md:text-2xl text-lg">
+          <p className="lg:text-3xl md:text-2xl text-md">
             기존 영상을 업로드 하고
           </p>
-          <div className="lg:w-72 lg:h-48 md:w-60 md:h-36 w-44 h-24 rounded-xl flex justify-center items-center bg-amber-100">
+          <div className="lg:w-72 lg:h-48 md:w-60 md:h-36 w-36 h-24 rounded-xl flex justify-center items-center bg-amber-100">
             <PlusCircleIcon />
           </div>
           <p className="text-neutral-700 lg:text-2xl md:text-xl text-md">
@@ -19,10 +19,10 @@ export default function ImageInfo1() {
         </div>
         <PlusIcon />
         <div className="flex flex-col items-center gap-3">
-          <p className="lg:text-3xl md:text-2xl text-lg">
+          <p className="lg:text-3xl md:text-2xl text-md">
             풀영상을 업로드 하면
           </p>
-          <div className="lg:w-72 lg:h-48 md:w-60 md:h-36 w-44 h-24 rounded-xl flex justify-center items-center bg-blue-200">
+          <div className="lg:w-72 lg:h-48 md:w-60 md:h-36 w-36 h-24 rounded-xl flex justify-center items-center bg-blue-200">
             <PlusCircleIcon />
           </div>
           <p className="text-white">o</p>

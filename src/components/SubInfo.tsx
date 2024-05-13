@@ -28,7 +28,7 @@ export default function SubInfo() {
     }
   };
   return (
-    <section className="lg:mt-48 md:mt-48 mt-52 flex flex-col lg:gap-20 md:gap-16 gap-14 px-8">
+    <section className="lg:mt-48 md:mt-48 mt-52 flex flex-col lg:gap-20 md:gap-16 gap-14">
       <div
         className={`flex justify-between lg:px-44 md:px-16 px-6 items-center ${
           scroll && "animate-fade-in-up"

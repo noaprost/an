@@ -24,7 +24,7 @@ export default function AdForm() {
     // 채널에 사용자를 추가
   };
   return (
-    <section className="mt-52 flex flex-col items-center lg:text-4xl md:text-3xl text-xl">
+    <section className="mt-52 flex flex-col items-center lg:text-4xl md:text-3xl text-lg">
       <div className="flex gap-3">
         <KakaoIcon />
         <p>플러스 친구를 추가하고 AN 출시 소식을 받아보세요</p>
