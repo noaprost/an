@@ -35,11 +35,20 @@ const config: Config = {
             transform: "rotate(2deg)",
           },
         },
+        "slow-bounce": {
+          "0%, 100%": {
+            transform: "translateY(20px)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "fade-in-up": "fade-in-up 1s ease-in",
         wiggle: "wiggle 0.5s ease-in-out infinite",
         "fade-in": "fade-in 0.5s ease-in",
+        "slow-bounce": "slow-bounce 0.8s ease-in-out infinite",
       },
     },
   },

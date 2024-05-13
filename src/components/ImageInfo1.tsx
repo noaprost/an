@@ -4,7 +4,7 @@ import PlusIcon from "./ui/PlusIcon";
 
 export default function ImageInfo1() {
   return (
-    <section className="mt-48 flex flex-col items-center gap-20 lg:py-40 md:py-40 py-60 bg-blue-50">
+    <section className="mt-48 flex flex-col items-center gap-20 lg:pt-40 md:pt-40 pt-60 bg-blue-50">
       <div className="flex justify-center items-center lg:gap-20 md:gap-10 gap-3">
         <div className="flex flex-col items-center gap-3">
           <p className="lg:text-3xl md:text-2xl text-md">
